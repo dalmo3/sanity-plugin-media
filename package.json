@@ -1,11 +1,11 @@
 {
-  "name": "sanity-plugin-media",
+  "name": "@dalmo/sanity-plugin-media",
   "version": "1.1.0",
   "license": "MIT",
   "author": {
-    "name": "Robin Pyon",
-    "email": "robin@robinpyon.com",
-    "url": "https://robinpyon.com"
+    "name": "Dalmo Mendonça",
+    "email": "dalmo@dalmo.dev",
+    "url": "https://dalmo.dev"
   },
   "keywords": [
     "sanity",
@@ -116,5 +116,8 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
