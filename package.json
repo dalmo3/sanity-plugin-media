@@ -1,6 +1,6 @@
 {
   "name": "@dalmo/sanity-plugin-media",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "license": "MIT",
   "author": {
     "name": "Dalmo Mendonça",
@@ -27,7 +27,7 @@
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/robinpyon/sanity-plugin-media.git"
+    "url": "https://github.com/dalmo3/sanity-plugin-media.git"
   },
   "scripts": {
     "prepare": "npm run build",
