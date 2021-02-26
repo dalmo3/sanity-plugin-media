@@ -81,7 +81,9 @@ const constructFilter = ({
     // It's possible to add this by adding the following line to the searchQuery, but it's quite slow
     // references(*[_type == "media.tag" && name.current == "${searchQuery.trim()}"]._id)
     ...(searchQuery
-      ? [groq`[altText, description, originalFilename, title] match '*${searchQuery.trim()}*'`]
+      ? [
+          groq`[altText, description, newField, originalFilename, title] match '*${searchQuery.trim()}*'`
+        ]
       : []),
     // Search facets
     ...searchFacetFragments

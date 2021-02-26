@@ -29,6 +29,16 @@ export const inputs: Record<SearchFacetName, SearchFacetInputProps> = {
     type: 'string',
     value: ''
   },
+  newField: {
+    contexts: 'all',
+    field: 'newField',
+    name: 'newField',
+    operatorType: 'empty',
+    operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
+    title: 'newField',
+    type: 'string',
+    value: ''
+  },
   height: {
     contexts: ['image', 'tool'],
     field: 'metadata.dimensions.height',

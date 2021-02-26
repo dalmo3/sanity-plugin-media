@@ -51,6 +51,7 @@ export const FACETS: (SearchFacetDivider | SearchFacetGroup | SearchFacetInputPr
   inputs.title,
   inputs.altText,
   inputs.description,
+  inputs.newField,
   divider,
   inputs.isOpaque,
   divider,

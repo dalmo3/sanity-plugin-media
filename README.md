@@ -142,6 +142,7 @@ Note that tags are namespaced within `opt.media` and tag names are accessed via 
       _type,
       altText,
       description,
+      newField,
       "tags": opt.media.tags[]->name.current,
       title
     }

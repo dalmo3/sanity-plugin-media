@@ -73,6 +73,7 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
   const generateDefaultValues = (asset?: Asset) => ({
     altText: asset?.altText || '',
     description: asset?.description || '',
+    newField: asset?.newField || '',
     originalFilename: asset ? getFilenameWithoutExtension(asset) : undefined,
     opt: {media: {tags: assetTagOptions}},
     title: asset?.title || ''
@@ -366,6 +367,16 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   ref={register}
                   rows={3}
                   value={currentAsset?.description}
+                />
+                {/* newField */}
+                <FormFieldInputTextarea
+                  disabled={formUpdating}
+                  error={errors?.newField}
+                  label="newField"
+                  name="newField"
+                  ref={register}
+                  rows={3}
+                  value={currentAsset?.newField}
                 />
               </Stack>
             </TabPanel>
