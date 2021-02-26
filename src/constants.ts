@@ -53,14 +53,14 @@ export const FACETS: (SearchFacetDivider | SearchFacetGroup | SearchFacetInputPr
   inputs.description,
   inputs.newField,
   divider,
-  inputs.isOpaque,
-  divider,
-  inputs.size,
-  inputs.type, // File type
-  divider,
-  inputs.orientation,
-  inputs.width,
-  inputs.height
+  // inputs.isOpaque,
+  // divider,
+  // inputs.size,
+  inputs.type // File type
+  // divider,
+  // inputs.orientation,
+  // inputs.width,
+  // inputs.height
 ]
 
 export const PANEL_HEIGHT = 32 // px
