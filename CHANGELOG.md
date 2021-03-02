@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.3.2](https://github.com/dalmo3/sanity-plugin-media/compare/v1.3.1...v1.3.2) (2021-03-02)
+
+
+### Bug Fixes
+
+* fields rows ([ff3506c](https://github.com/dalmo3/sanity-plugin-media/commit/ff3506cc6b6d6643fef64c172499271351eadde6))
+
 ### [1.3.1](https://github.com/dalmo3/sanity-plugin-media/compare/v1.3.0...v1.3.1) (2021-03-02)
 
 ## [1.3.0](https://github.com/dalmo3/sanity-plugin-media/compare/v1.2.0...v1.3.0) (2021-03-02)
