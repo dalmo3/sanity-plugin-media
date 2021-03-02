@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/dalmo3/sanity-plugin-media/compare/v1.2.0...v1.3.0) (2021-03-02)
+
+
+### Features
+
+* added fields: date medium dimensions` ([b54b170](https://github.com/dalmo3/sanity-plugin-media/commit/b54b1703c7563c752e8739887014dbffd8c0d595))
+* remove unnecessary filters ([8e19c0b](https://github.com/dalmo3/sanity-plugin-media/commit/8e19c0bb4ea3339c71d4b1b72a59d75f4b51701b))
+
 ## [1.2.0](https://github.com/dalmo3/sanity-plugin-media/compare/v1.1.1...v1.2.0) (2021-02-26)
 
 ### Features
