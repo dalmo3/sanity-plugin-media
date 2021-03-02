@@ -29,6 +29,16 @@ export const inputs: Record<SearchFacetName, SearchFacetInputProps> = {
     type: 'string',
     value: ''
   },
+  location: {
+    contexts: 'all',
+    field: 'location',
+    name: 'location',
+    operatorType: 'empty',
+    operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
+    title: 'location',
+    type: 'string',
+    value: ''
+  },
   date: {
     contexts: 'all',
     field: 'date',

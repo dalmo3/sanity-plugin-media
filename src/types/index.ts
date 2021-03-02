@@ -2,8 +2,10 @@ import {SanityAssetDocument, SanityDocument, SanityImageAssetDocument} from '@sa
 import {AnyAction} from 'redux'
 
 type CustomFields = {
+  title?: string
   altText?: string
   description?: string
+  location?: string
   date?: string
   medium?: string
   dimensions?: string
@@ -12,7 +14,6 @@ type CustomFields = {
       tags?: SanityReference[]
     }
   }
-  title?: string
 }
 
 type SearchFacetInputCommon = {
@@ -224,11 +225,12 @@ export type SearchFacetName =
   | 'altText'
   | 'description'
   | 'date'
-  | 'medium'
   | 'dimensions'
   | 'height'
   | 'inUse'
   | 'isOpaque'
+  | 'location'
+  | 'medium'
   | 'orientation'
   | 'size'
   | 'tag'

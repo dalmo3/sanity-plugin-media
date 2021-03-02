@@ -71,14 +71,15 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
   const assetTagOptions = useTypedSelector(selectTagSelectOptions(currentAsset))
 
   const generateDefaultValues = (asset?: Asset) => ({
+    title: asset?.title || '',
     altText: asset?.altText || '',
     description: asset?.description || '',
+    location: asset?.location || '',
     date: asset?.date || '',
     medium: asset?.medium || '',
     dimensions: asset?.dimensions || '',
     originalFilename: asset ? getFilenameWithoutExtension(asset) : undefined,
-    opt: {media: {tags: assetTagOptions}},
-    title: asset?.title || ''
+    opt: {media: {tags: assetTagOptions}}
   })
 
   // Generate a string from all current tag labels
@@ -370,8 +371,17 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   rows={3}
                   value={currentAsset?.description}
                 />
+                {/* location */}
+                <FormFieldInputText
+                  disabled={formUpdating}
+                  error={errors?.location}
+                  label="location"
+                  name="location"
+                  ref={register}
+                  value={currentAsset?.location}
+                />
                 {/* date */}
-                <FormFieldInputTextarea
+                <FormFieldInputText
                   disabled={formUpdating}
                   error={errors?.date}
                   label="date"
@@ -380,7 +390,7 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   value={currentAsset?.date}
                 />
                 {/* medium */}
-                <FormFieldInputTextarea
+                <FormFieldInputText
                   disabled={formUpdating}
                   error={errors?.medium}
                   label="medium"
@@ -389,7 +399,7 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   value={currentAsset?.medium}
                 />
                 {/* dimensions */}
-                <FormFieldInputTextarea
+                <FormFieldInputText
                   disabled={formUpdating}
                   error={errors?.dimensions}
                   label="dimensions"
