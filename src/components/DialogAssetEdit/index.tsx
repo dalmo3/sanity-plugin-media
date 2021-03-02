@@ -377,7 +377,6 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   label="date"
                   name="date"
                   ref={register}
-                  rows={3}
                   value={currentAsset?.date}
                 />
                 {/* medium */}
@@ -387,7 +386,6 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   label="medium"
                   name="medium"
                   ref={register}
-                  rows={3}
                   value={currentAsset?.medium}
                 />
                 {/* dimensions */}
@@ -397,7 +395,6 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   label="dimensions"
                   name="dimensions"
                   ref={register}
-                  rows={3}
                   value={currentAsset?.dimensions}
                 />
               </Stack>
