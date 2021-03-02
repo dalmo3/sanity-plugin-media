@@ -140,11 +140,11 @@ Note that tags are namespaced within `opt.media` and tag names are accessed via 
     asset->{
       _ref,
       _type,
+      title
       altText,
       description,
-      newField,
+      date,
       "tags": opt.media.tags[]->name.current,
-      title
     }
   }
 }

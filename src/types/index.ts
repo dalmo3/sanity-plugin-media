@@ -4,7 +4,9 @@ import {AnyAction} from 'redux'
 type CustomFields = {
   altText?: string
   description?: string
-  newField?: string
+  date?: string
+  medium?: string
+  dimensions?: string
   opt?: {
     media?: {
       tags?: SanityReference[]
@@ -221,7 +223,9 @@ export type SearchFacetInputStringProps = SearchFacetInputCommon & {
 export type SearchFacetName =
   | 'altText'
   | 'description'
-  | 'newField'
+  | 'date'
+  | 'medium'
+  | 'dimensions'
   | 'height'
   | 'inUse'
   | 'isOpaque'

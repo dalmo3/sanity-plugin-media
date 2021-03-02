@@ -194,7 +194,9 @@ const assetsSlice = createSlice({
               _updatedAt,
               altText,
               description,
-              newField,
+              date,
+              medium,
+              dimensions,
               extension,
               metadata {
                 dimensions,

@@ -82,7 +82,7 @@ const constructFilter = ({
     // references(*[_type == "media.tag" && name.current == "${searchQuery.trim()}"]._id)
     ...(searchQuery
       ? [
-          groq`[altText, description, newField, originalFilename, title] match '*${searchQuery.trim()}*'`
+          groq`[altText, description, date, medium, dimensions, originalFilename, title] match '*${searchQuery.trim()}*'`
         ]
       : []),
     // Search facets

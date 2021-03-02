@@ -73,7 +73,9 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
   const generateDefaultValues = (asset?: Asset) => ({
     altText: asset?.altText || '',
     description: asset?.description || '',
-    newField: asset?.newField || '',
+    date: asset?.date || '',
+    medium: asset?.medium || '',
+    dimensions: asset?.dimensions || '',
     originalFilename: asset ? getFilenameWithoutExtension(asset) : undefined,
     opt: {media: {tags: assetTagOptions}},
     title: asset?.title || ''
@@ -368,15 +370,35 @@ const DialogAssetEdit: FC<Props> = (props: Props) => {
                   rows={3}
                   value={currentAsset?.description}
                 />
-                {/* newField */}
+                {/* date */}
                 <FormFieldInputTextarea
                   disabled={formUpdating}
-                  error={errors?.newField}
-                  label="newField"
-                  name="newField"
+                  error={errors?.date}
+                  label="date"
+                  name="date"
                   ref={register}
                   rows={3}
-                  value={currentAsset?.newField}
+                  value={currentAsset?.date}
+                />
+                {/* medium */}
+                <FormFieldInputTextarea
+                  disabled={formUpdating}
+                  error={errors?.medium}
+                  label="medium"
+                  name="medium"
+                  ref={register}
+                  rows={3}
+                  value={currentAsset?.medium}
+                />
+                {/* dimensions */}
+                <FormFieldInputTextarea
+                  disabled={formUpdating}
+                  error={errors?.dimensions}
+                  label="dimensions"
+                  name="dimensions"
+                  ref={register}
+                  rows={3}
+                  value={currentAsset?.dimensions}
                 />
               </Stack>
             </TabPanel>

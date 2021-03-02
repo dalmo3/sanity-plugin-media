@@ -29,13 +29,33 @@ export const inputs: Record<SearchFacetName, SearchFacetInputProps> = {
     type: 'string',
     value: ''
   },
-  newField: {
+  date: {
     contexts: 'all',
-    field: 'newField',
-    name: 'newField',
+    field: 'date',
+    name: 'date',
     operatorType: 'empty',
     operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
-    title: 'newField',
+    title: 'date',
+    type: 'string',
+    value: ''
+  },
+  medium: {
+    contexts: 'all',
+    field: 'medium',
+    name: 'medium',
+    operatorType: 'empty',
+    operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
+    title: 'medium',
+    type: 'string',
+    value: ''
+  },
+  dimensions: {
+    contexts: 'all',
+    field: 'dimensions',
+    name: 'dimensions',
+    operatorType: 'empty',
+    operatorTypes: ['empty', 'notEmpty', null, 'includes', 'doesNotInclude'],
+    title: 'dimensions',
     type: 'string',
     value: ''
   },
